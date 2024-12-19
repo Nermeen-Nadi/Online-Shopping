@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function renderCart() {
         const cartContainer = document.getElementById('cartItems');
         const totalPriceElement = document.getElementById('totalPrice');
-        cartContainer.innerHTML = ''; // Clear cart items
+        cartContainer.innerHTML = ''; 
 
         let totalPrice = 0;
 
