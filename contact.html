@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="./Styles/contact.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <img class="logo" src="./logo1.jpg" alt="Logo">
+        <ul>
+            <li><a href="home.html" id="home">Home</a></li>
+            <li><a href="contact.html" id="contact">Contact</a></li>
+            <li id="userName">Welcome, User</li>
+            <li><a href="cart.html" id="cart">🛒 Cart</a></li>
+            <li><a href="index.html" id="logout">Logout</a></li>
+        </ul>
+        <div class="menu-toggle"><i class="fas fa-bars"></i></div>
+    </nav>
+
+    <!-- Form -->
+    <div class="contact">
+        <h1>Contact Us</h1><br>
+        <form>
+            <p><input type="text" placeholder="Name" required name="Name" tabindex="1"></p>
+            <p><input type="tel" placeholder="Phone Number" required name="People" tabindex="2"></p>
+            <textarea name="feedback" id="#" placeholder="Enter Your Message"></textarea><br><br>
+            <div style="text-align: center;">
+                <p style="border-bottom: none;"><button type="submit">SEND MESSAGE</button></p>
+            </div>
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Online shopping</p>
+        <button id="backToTopBtn">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+    </footer>
+
+    <script src="./Scripts/contact.js"></script>
+</body>
+
+</html>
