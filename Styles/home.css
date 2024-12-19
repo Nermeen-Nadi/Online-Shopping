@@ -4,7 +4,6 @@
     box-sizing: border-box;
 }
 
-/* Body Styles */
 body, html {
     margin: 0; 
     padding: 0;
@@ -32,7 +31,7 @@ nav {
     top: 0;
     z-index: 1000;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin: 0; /* No white space around navbar */
+    margin: 0; 
 }
 
 nav .logo {
@@ -46,7 +45,7 @@ nav ul {
     list-style: none;
     align-items: center;
     gap: 2rem;
-    margin: 0; /* Ensure no margin */
+    margin: 0; 
 }
 
 nav ul li a {
@@ -60,7 +59,6 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    /* color: #1a1a2e; */
     color:white;
     background-color: #f753078c;
     transform: scale(2);
@@ -122,18 +120,18 @@ nav ul li#userName:hover{
 .slider-image {
     position: absolute;
     top: 0;
-    left: 100%; /* Start off-screen to the right */
+    left: 100%; 
     width: 100%;
     height: 100%;
     background-size: cover;
     background-position: center;
     transition: transform 1s ease-out, left 1s ease-out;
-    transform: scale(0); /* Start the image as scaled down */
+    transform: scale(0);
 }
 
 /* Active Image */
 .slider-image.active {
-    left: 0; /* Move the image into view */
+    left: 0; 
 }
 
 /* Previous and Next Buttons */
@@ -212,7 +210,7 @@ nav ul li#userName:hover{
 
 /* Categories Section */
 .categories {
-    margin: 2rem 0; /* Add top and bottom spacing */
+    margin: 2rem 0; 
     text-align: center;
     padding: 0;
 }
@@ -242,7 +240,7 @@ nav ul li#userName:hover{
 }
 
 .categories button i {
-    margin-right: 8px; /* Adds spacing between icon and text */
+    margin-right: 8px;
     font-size: 1.2rem;
 }
 
@@ -252,7 +250,6 @@ nav ul li#userName:hover{
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1), -4px -4px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Additional Styling to Make Category Buttons Stand Out */
 .categories button:focus {
     outline: none;
     box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.6);
@@ -289,10 +286,9 @@ nav ul li#userName:hover{
 .product-card:hover {
     transform: scale(1.05);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-    background-color: #f9f9f9; /* Slight hover effect for the card */
+    background-color: #f9f9f9; 
 }
 
-/* Decorative Glow Effect */
 .product-card::before {
     content: '';
     position: absolute;
@@ -372,7 +368,7 @@ footer {
     padding: 1rem;
     background-color: #1a1a2e;
     color: white;
-    margin: 0; /* Ensure no gaps at bottom */
+    margin: 0; 
 }
 
 #backToTopBtn {
@@ -401,7 +397,7 @@ footer {
 /* Responsive Design */
 @media (max-width: 768px) {
     nav ul {
-        display: none; /* Hide menu for smaller screens */
+        display: none; 
     }
     .menu-toggle {
         display: block;
@@ -418,7 +414,7 @@ footer {
         grid-template-columns: 1fr;
     }
     .categories {
-        margin: 1rem 0; /* Adjust spacing */
+        margin: 1rem 0; 
     }
 }
 
