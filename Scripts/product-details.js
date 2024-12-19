@@ -11,14 +11,13 @@ document.addEventListener('DOMContentLoaded', async () => {
         return;
     }
 
-    let product; // Move product to a higher scope
+    let product; 
 
     try {
         // Fetch product details from the API
         product = await fetch(`https://fakestoreapi.com/products/${selectedProductId}`)
             .then(res => res.json());
 
-        // Populate product details in the DOM
         document.getElementById('product-image').src = product.image;
         document.getElementById('product-image').alt = product.title;
         document.getElementById('product-title').textContent = product.title;
@@ -32,7 +31,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         return;
     }
 
-    // Event listener for "Add to Cart" button
+    // Add to Cart button
     document.getElementById('add-to-cart').addEventListener('click', () => {
         const cart = JSON.parse(localStorage.getItem('cart')) || [];
         const existingProduct = cart.find(item => item.id === parseInt(selectedProductId));
@@ -52,7 +51,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         localStorage.setItem('cart', JSON.stringify(cart));
     });
 
-    // Event listener for "Back to Home" button
+    // Back to Home button
     document.getElementById('back-to-home').addEventListener('click', () => {
         window.location.href = "home.html";
     });
