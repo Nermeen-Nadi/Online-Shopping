@@ -4,7 +4,6 @@
     box-sizing: border-box;
 }
 
-/* Body Styles */
 body, html {
     margin: 0; 
     padding: 0;
@@ -32,7 +31,7 @@ nav {
     top: 0;
     z-index: 1000;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin: 0; /* No white space around navbar */
+    margin: 0; 
 }
 
 nav .logo {
@@ -46,7 +45,7 @@ nav ul {
     list-style: none;
     align-items: center;
     gap: 2rem;
-    margin: 0; /* Ensure no margin */
+    margin: 0; 
 }
 
 nav ul li a {
@@ -60,7 +59,6 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    /* color: #1a1a2e; */
     color:white;
     background-color: #f753078c;
     transform: scale(2);
@@ -136,7 +134,7 @@ h2 {
 .product-card:hover {
     transform: scale(1.05);
     box-shadow: 0 8px 20px #f753078c;
-    background-color: #f9f9f9; /* Slight hover effect for the card */
+    background-color: #f9f9f9; 
 }
 
 /* Footer */
