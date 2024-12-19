@@ -33,7 +33,6 @@ document.getElementById('loginForm').addEventListener('submit', function (e) {
     const userData = { name, email };
     localStorage.setItem('user', JSON.stringify(userData));
     
-    // Redirect to home page
     window.location.href = 'home.html';
 });
 
