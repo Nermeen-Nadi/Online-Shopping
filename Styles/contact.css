@@ -4,7 +4,6 @@
     box-sizing: border-box;
 }
 
-/* Body Styles */
 body, html {
     margin: 0; 
     padding: 0;
@@ -32,7 +31,7 @@ nav {
     top: 0;
     z-index: 1000;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin: 0; /* No white space around navbar */
+    margin: 0;
 }
 
 nav .logo {
@@ -172,7 +171,7 @@ footer {
     padding: 1rem;
     background-color: #1a1a2e;
     color: white;
-    margin: 0; /* Ensure no gaps at bottom */
+    margin: 0; 
 }
 
 #backToTopBtn {
