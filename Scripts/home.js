@@ -16,11 +16,10 @@ document.addEventListener("DOMContentLoaded", async () => {
     const button = document.createElement("button");
     button.textContent = category;
     button.addEventListener("click", () => loadProductsByCategory(category));
-    button.classList.add("styled-category-button"); // Add custom style
+    button.classList.add("styled-category-button"); 
     categoryButtons.appendChild(button);
   });
 
-  // Load all products on click
   document.getElementById("allCategories").addEventListener("click", loadAllProducts);
 
   async function loadAllProducts() {
@@ -41,7 +40,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   function displayProducts(products) {
     const productsContainer = document.getElementById("products");
-    productsContainer.innerHTML = ""; // Clear previous products
+    productsContainer.innerHTML = ""; 
     products.forEach((product) => {
       const productCard = document.createElement("div");
       productCard.className = "product-card";
@@ -73,7 +72,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       existingProduct.quantity++;
     } else {
       cart.push({ id: productId, title, price, image, quantity: 1 });
-      cart_counter++; // Increment counter only for new products
+      cart_counter++;
       updateCartCounter();
     }
 
@@ -101,7 +100,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   // Initialize cart counter
   const cart = JSON.parse(localStorage.getItem("cart")) || [];
-  cart_counter = cart.length; // Count unique products
+  cart_counter = cart.length; 
   updateCartCounter();
 
   loadAllProducts();
